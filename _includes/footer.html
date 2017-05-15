@@ -5,14 +5,15 @@
       <div class="col-md-12">
         <div class="footer-manu">
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="{{ site.baseurl }}/contact">Contact us</a></li>
-            <li><a href="#">How it works</a></li>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl }}/account">Account</a></li>
+            <li><a href="{{ site.baseurl }}/documentation">API Documentation</a></li>
+            <li><a href="{{ site.baseurl }}{% if page.permalink == "/" %}#stats{% else %}/#stats{% endif %}">Stats</a></li>
             <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-            <li><a href="#">Terms</a></li>
+            <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
           </ul>
         </div>
-	<p>Developed by <a href="https://www.nightdev.it">NightDevs</a></p>
+        <p>Developed by <a href="https://www.nightdev.it">NightDevs</a></p>
         <p>Copyright &copy; Design &amp; by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
       </div>
     </div>

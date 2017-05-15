@@ -14,19 +14,25 @@ keep_files:
 
 
 # Site settings
-title: Airspace
-subtitle: "A free HTML5 agency template"
+title: Free-Proxies | Public Elite and Anonymous Proxy API
+subtitle: "Free proxies, checker and API for high quality proxies. Free list of sock5 and elite proxy, checked every 30 minutes."
+description: "Free proxies, checker and API for high quality proxies. Free list of sock5 and elite proxy, checked every 30 minutes."
 url: "https://www.free-proxies.info" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "/airspace-jekyll-master/_site"
-cover: "/logo.png"
-logo: "/logo.png"
+baseurl: ""
+cover: "/logo-sm.png"
+logo: "/logo-sm.png"
+
+domainAPI: "https://api.free-proxies.info"
+
+signup_page_link: "/signup"
+account_page_link: "/account"
 
 # Build settings
 markdown: kramdown
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-97074766-1"
 
 # Category descriptions (for archive pages)
 descriptions:
