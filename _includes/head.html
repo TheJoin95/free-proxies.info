@@ -11,6 +11,22 @@
 <meta name="author" content="@thejoin95" />
 
 
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:site_name" content="www.free-proxies.info" />
+<meta property="og:image" content="{{ site.baseurl }}{{ page.url }}/img/logo.png"/>
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
+<meta property="fb:app_id" content="284205248669982" />
+
+
+<meta name="twitter:widgets:csp" content="on">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="https://twitter.com/TheJoin95"/>
+<meta name="twitter:domain" content="www.free-proxies.info"/>
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+<meta name="twitter:description" content=""/>
+
 <!-- CSS -->
 <link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" />

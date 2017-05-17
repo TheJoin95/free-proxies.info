@@ -8,10 +8,88 @@ permalink: /account/
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="block">
-          <h1>Work in progress</h1>
+        <div class="block" style="padding-left: 0">
+          <h1>Account management</h1>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section id="contact-form">
+  <div class="container">
+  	<div class="row">
+		<center class="animated fadeInUp col-md-10 col-md-push-1" id="needSignin" style="display: none">
+			<a href="https://api.free-proxies.info/facebook"><button class="col-sm-4 social-btn fb-btn"><i class="ion-social-facebook"></i> Signin w\ FB</button></a>
+			<a href="https://api.free-proxies.info/google"><button class="col-sm-4 social-btn google-btn"><i class="ion-social-googleplus"></i> Signin w\ G+</button></a>
+			<a href="https://api.free-proxies.info/github"><button class="col-sm-4 social-btn github-btn"><i class="ion-social-github"></i> Signin w\ Github</button></a>
+		</center>
+  	</div>
+    <div class="row">
+		<div class="col-md-6 col-md-push-3 col-sm-12 animated fadeInUp" id="alreadySigned" style="display: none">
+			<div class="block">
+				<form action="" method="POST" id="userForm">
+					<input type="hidden" name="_id" id="user_id" />
+					<div class="form-group-2">
+						<input type="text" class="form-control" name="api_key" id="user_api_key">
+					</div>
+					<div class="form-group-2">
+						<input type="text" class="form-control" name="type" id="user_type">
+					</div>
+					<div class="form-group-2">
+						<input type="text" class="form-control" name="name" placeholder="Your name" id="user_name">
+					</div>
+					<div class="form-group-2">
+						<input type="text" class="form-control" name="host" id="host" placeholder="Domain from anywhere you want to make API request (es: api.free-proxies.info)">
+					</div>
+					<button class="btn btn-default" id="updateUser">Update</button>
+				</form>
+			</div>
+			<!-- <div style="max-width: 200px" class="block">
+                <i class="ion-ios-speedometer-outline"></i>
+                <h4 id="requestDay"></h4>
+                <span>Request already made today</span>
+              </div> -->
+		</div>
+    </div>
+  </div>
+</section>
+
+<section id="service" style="display: none;paddin-top: 20px">
+	<div class="container">
+		<div class="row">
+			<div class="section-title">
+				<h2>Upgrade your account</h2>
+				<p>Take a look to our offer to get no limit to our API!!<br/><small>TIP: use the same email of your account for a fast update</small></p>
+			</div>
+		</div>
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-push-2">
+			<div class="service-item">
+				<i class="icon ion-coffee"></i>
+				<h4>Try with no limit - 2days</h4>
+				<p>Wanna try at the best of our capabilities? Buy us a coffe! You could try the service without limit for 2 full days!<br/></p>
+				<a href="#!" class="paddle_button btn btn-default" data-product="513461">Buy us a coffe! €.98</a>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-4 col-md-push-2">
+			<div class="service-item">
+				<i class="ion-planet"></i>
+				<h4>Commercial Use?</h4>
+				<p>What a nice choice! We will work together for a long time: 2 month for only 9 coffes! What a deal :Ds</p>
+				<a href="#!" class="paddle_button btn btn-default" data-product="513458">Buy Now! €8.99</a>
+			</div>
+		</div>
+	  
+	</div>
+	</div>
+</section>
+
+
+<script src="//cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+	Paddle.Setup({
+		vendor: 18881
+	});
+</script>
