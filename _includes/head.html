@@ -13,9 +13,10 @@
 
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:url" content="{% if page.url == "/" %}{{ site.baseurl }}{% else %}{{ site.baseurl }}{{ page.url }}{% endif %}" />
 <meta property="og:site_name" content="www.free-proxies.info" />
-<meta property="og:image" content="{{ site.baseurl }}{{ page.url }}/img/slogan.jpg"/>
+<meta property="og:image" content="{{ site.url }}/img/slogan.jpg"/>
+<meta property="og:image:secure_url" content="{{ site.url }}/img/slogan.jpg"/>
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
 <meta property="fb:app_id" content="284205248669982" />
 
@@ -61,6 +62,23 @@
   ga('send', 'pageview');
 
 </script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1564627983550263'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1564627983550263&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
 
 
 <!--
