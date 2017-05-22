@@ -20,24 +20,102 @@ permalink: /documentation.html
   <div class="container">
   	<div class="row">
   		<div class="col-sm-12">
-  			
+  			<h2>Request</h2>
+  			<p>
+  				<label>GET - Sample - </label><code>https://api.free-proxies.info/v1/proxy/list?api_key=[API_KEY]</code><br/>
+  				<label>Possible Filters - </label><code style="font-size: 12px">&country_code=IT&anonymityLevel=anonymous&google=true&elapsed=5&get=true&post=true&https=true&port=8080</code>
+  			</p>
+			<small>NOTE: you need to make the request from the server host that you have set in your account-</small>
+
+  			<br/>
+  			<br/>
+  			<h2>Parameters:</h2>
+  			<table class="table table-responsive">
+  				<thead>
+  					<tr>
+  						<th>Name</th>
+  						<th>Type</th>
+  						<th>Value</th>
+  						<th>Description</th>
+  					</tr>
+  				</thead>
+  				<tbody>
+  					<tr>
+  						<td><strong>api_key</strong></td>
+  						<td>string</td>
+  						<td>Register to get your free API key</td>
+  						<td><strong>REQUIRED</strong><br>Your API key (check your account settings for the request. You need to make the request from the same host).</td>
+  					</tr>
+  					<tr>
+  						<td><strong>country_code</strong></td>
+  						<td>string</td>
+  						<td><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a></td>
+  						<td>Add this to retrieve only proxies at this location. Comma-separate multiple values to search with OR condition.<br>DEFAULT: All countries</td>
+  					</tr>
+  					<tr>
+  						<td><strong>anonymityLevel</strong></td>
+  						<td>string</td>
+  						<td>anonymous, or transparent</td>
+  						<td>Add this to retrieve only proxies with a specific level of anonymity.<br>DEFAULT: All types</td>
+  					</tr>
+  					<tr>
+  						<td><strong>google</strong></td>
+  						<td>boolean</td>
+  						<td>is a google proxy?</td>
+  						<td>Add this to retrieve only proxies that works with google (HTTP; HTTPS)<br>DEFAULT: All types</td>
+  					</tr>
+  					<tr>
+  						<td><strong>https (future: protocols)</strong></td>
+  						<td>boolean (future: string)</td>
+  						<td>actuale a boolean; future values: http, https, socks4, or socks5</td>
+  						<td>Add this to retrieve only proxies with a specific protocol (actual only https). Comma-separate multiple values to search with OR condition.<br>DEFAULT: All protocols</td>
+  					</tr>
+  					<tr>
+  						<td><strong>elapsed</strong></td>
+  						<td>boolean</td>
+  						<td>digit from 0 to 20 (max second for timeout request)</td>
+  						<td>Only retrieve proxies that were tested to with a max latency of the number you write (less is better).<br>DEFAULT: < 3</td>
+  					</tr>
+  					<tr>
+  						<td><strong>get or post</strong></td>
+  						<td>boolean</td>
+  						<td>true or false, to define the both parameters </td>
+  						<td>Only retrieve proxies with a specif method. <code>get</code> parameters is for get only method.<br>DEFAULT: All methods</td>
+  					</tr>
+  					<tr>
+  						<td><strong>port</strong></td>
+  						<td>integer</td>
+  						<td>80, 8080 ... </td>
+  						<td>Only retrieve proxies with a specif port. Comma-separate multiple values to search with OR condition.<br>DEFAULT: All ports</td>
+  					</tr>
+  				</tbody>
+  			</table>
   		</div>
   	</div>
     <div class="row">
-      <div class="col-md-7 col-sm-12">
-        <div class="block">
-          <div class="section-title">
-            <h2>How it works</h2>
-            <p>Far far away, behind the mountains, far from all the countries there live elite, anonymous, transparent and socks proxy. We discovered them.</p>
-          </div>
-          <p>Every minute we scrape the whole internet for get free, premium and elite proxies. We found them, we check them and we provide them to you via simple JSON REST API. Yeah, sounds good. What do you need? Just <a href="/signup">signup</a>! Get the access!</p>
-        </div>
-      </div><!-- .col-md-7 close -->
-      <div class="col-md-5 col-sm-12">
-        <div class="block">
-          <img src="img/wrapper-img.png" alt="Img">
-        </div>
-      </div><!-- .col-md-5 close -->
+      <div class="col-md-12 col-sm-12">
+      	<h2>Response example</h2>
+      	<small>The response is always in JSON</small>
+      	<pre>
+{
+	"address": "212.237.27.82", 
+	"anonymityLevel": "transparent", 
+	"cookies": true, 
+	"country_code": "IT", 
+	"full_address": "212.237.27.82:1189", 
+	"get": true, 
+	"port": "1189", 
+	"post": true, 
+	"referer": true, 
+	"supportHttps": true, 
+	"user_agent": true, 
+	"websites": {
+		"amazon": false, 
+		"google": true
+	}
+}
+      	</pre>
+      </div>
     </div>
   </div>
 </section>

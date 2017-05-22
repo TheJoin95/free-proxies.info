@@ -12,6 +12,7 @@ keep_files:
   - ".git"
   - ".gitignore"
 
+incremental: True
 
 # Site settings
 title: Free-Proxies | Public Elite and Anonymous Proxy API
