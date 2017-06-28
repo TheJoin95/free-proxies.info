@@ -10,6 +10,13 @@ $(document).ready(function(){
 	    autoPlay: 3000,
 	});
 
+	if($('.fb-btn').length) {
+		$('.fb-btn, .google-btn, .github-btn').on('click', function() {
+			var where = (window.location.pathname == '/') ? 'home' : 'account';
+			ga('send', 'event', { eventCategory: 'btn-social', eventAction: 'click', eventLabel: 'Click Signup/in ('+ where +')'});	
+		});
+	}
+
 
 	if($('#userForm').length > 0) {
 		$.ajax({
