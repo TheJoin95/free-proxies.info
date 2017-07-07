@@ -16,8 +16,8 @@ incremental: True
 
 # Site settings
 title: Free-Proxies | Public Elite and Anonymous Proxy API
-subtitle: "Free proxies, checker and API for high quality proxies. Free list of sock5 and elite proxy, checked every 30 minutes."
-description: "Free proxies, checker and API for high quality proxies. Free list of sock5 and elite proxy, checked every 30 minutes."
+subtitle: "Free proxies, checker and API for http elite proxy. Free proxy list of http proxy and anonymous proxy, checked every 5 minutes."
+description: "Free proxy, checker and API for http elite proxy. Proxy Server and Free proxy list of http proxy and anonymous proxy, checked every 5 minutes."
 url: "https://www.free-proxies.info" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: "https://www.free-proxies.info"
