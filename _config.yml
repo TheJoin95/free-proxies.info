@@ -18,9 +18,9 @@ incremental: True
 title: Free-Proxies | Public Elite and Anonymous Proxy API
 subtitle: "Free proxies, checker and API for http elite proxy. Free proxy list of http proxy and anonymous proxy, checked every 5 minutes."
 description: "Free proxy, checker and API for http elite proxy. Proxy Server and Free proxy list of http proxy and anonymous proxy, checked every 5 minutes."
-url: "https://www.free-proxies.info" # the base hostname & protocol for your site
+url: "https://www.mikilombardi.com/free-proxies.info/" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: "https://www.free-proxies.info"
+baseurl: "https://www.mikilombardi.com/free-proxies.info/"
 cover: "/logo-sm.png"
 logo: "/logo-sm.png"
 
